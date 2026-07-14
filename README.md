@@ -2,6 +2,20 @@
 
 This repository explores and compares two distinct computer vision pipelines for locating and classifying objects within a scene. It evaluates how **CLIP (Contrastive Language-Image Pre-training)** performs when paired with (**YOLO**) versus the segmantation model (**SAM - Segment Anything Model**).
 
+<table>
+  <tr>
+    <td align="center">
+      <img alt="Initial pipelines" src="https://github.com/user-attachments/assets/fe386d8b-95b4-4b68-9801-eb52dd5ceae6" width="60%"/>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <sub>Comparison of the intial two pipelines: an input image and text prompt are passed through either YOLO (bounding boxes) or SAM (segmentation masks), and the resulting crop is classified by CLIP to produce the selected object.<br>
+      </sub>
+    </td>
+  </tr>
+</table>
+
 ---
 
 ## Key Insight
