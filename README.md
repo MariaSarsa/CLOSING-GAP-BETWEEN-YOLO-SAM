@@ -27,7 +27,7 @@ SAM’S mask is sharper and with a higher resolution, but for a deep neural netw
 <table>
   <tr>
     <td align="center">
-      <img alt="Different masks" src="https://github.com/user-attachments/assets/876b131b-4dd9-472a-b82b-eeb39ca0b0c1" width="100%"/>
+      <img alt="Different masks" src="https://github.com/user-attachments/assets/876b131b-4dd9-472a-b82b-eeb39ca0b0c1" width="80%"/>
     </td>
   </tr>
   <tr>
@@ -49,7 +49,7 @@ This way, the pipeles for both YOLO and SAM are the following:
 <table>
   <tr>
     <td align="center">
-      <img alt="Closing the gap" src="https://github.com/user-attachments/assets/97ec77e3-8dd1-498a-8063-bcc14a6e8a91" width="100%"/>
+      <img alt="Closing the gap" src="https://github.com/user-attachments/assets/97ec77e3-8dd1-498a-8063-bcc14a6e8a91" width="80%"/>
     </td>
   </tr>
   <tr>
