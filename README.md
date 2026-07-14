@@ -5,7 +5,7 @@ This repository explores and compares two distinct computer vision pipelines for
 <table>
   <tr>
     <td align="center">
-      <img alt="Initial pipelines" src="https://github.com/user-attachments/assets/fe386d8b-95b4-4b68-9801-eb52dd5ceae6" width="60%"/>
+      <img alt="Initial pipelines" src="https://github.com/user-attachments/assets/fe386d8b-95b4-4b68-9801-eb52dd5ceae6" width="80%"/>
     </td>
   </tr>
   <tr>
