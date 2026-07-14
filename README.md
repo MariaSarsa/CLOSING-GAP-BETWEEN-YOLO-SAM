@@ -22,7 +22,21 @@ This repository explores and compares two distinct computer vision pipelines for
 
 While building this pipeline, an important trade-off was observed regarding how deep neural networks like CLIP interpret visual boundaries:
 
-SAM’S mask is sharper and with a higher resolution, but for a deep neural network like CLIP, it is better to have the natural background context and padding provided by YOLO's bounding boxes. This maximizes classification accuracy."*
+SAM’S mask is sharper and with a higher resolution, but for a deep neural network like CLIP, it is better to have the natural background context and padding provided by YOLO's bounding boxes. This maximizes classification accuracy.
+
+<table>
+  <tr>
+    <td align="center">
+      <img alt="Different masks" src="https://github.com/user-attachments/assets/876b131b-4dd9-472a-b82b-eeb39ca0b0c1" width="100%"/>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <sub>Side-by-side comparison of the same object: YOLO's bounding box retains surrounding context and padding, while SAM's mask is a higher resolution contour This difference in framing is the root cause of the accuracy gap seen with CLIP.<br>
+      </sub>
+    </td>
+  </tr>
+</table>
 
 ---
 
