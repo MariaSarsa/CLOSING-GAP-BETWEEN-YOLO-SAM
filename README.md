@@ -18,6 +18,22 @@ This repository explores and compares two distinct computer vision pipelines for
 
 ---
 
+## Repository Structure
+
+The workspace is laid out as follows:
+
+```text
+├── Images/                
+│   └── Object_Setup.jpeg  # Target test image
+├── Prompt_SAM_CLIP.ipynb  # Pipeline: SAM segmentation + CLIP + CLIP matching
+├── Prompt_YOLO_CLIP.ipynb # Pipeline: YOLO bounding boxes + CLIP matching
+├── requirements.txt       # Python environment dependencies
+└── README.md              # Project documentation
+```
+
+
+---
+
 ## Key Insight
 
 While building this pipeline, an important trade-off was observed regarding how deep neural networks like CLIP interpret visual boundaries:
@@ -63,25 +79,26 @@ This way, the pipeles for both YOLO and SAM are the following:
 
 ## Results
 
-...
+
+<table>
+  <tr>
+    <td align="center">
+      <img alt="YOLO+CLIP vs SAM+CLIP^2 testing prompts" src="https://github.com/user-attachments/assets/1419617e-b495-4074-9c0b-cc5e97417e4f" width="50%"/>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <sub>Results after closing the gap: running CLIP twice on the SAM pipeline (SAM + CLIP²) using YOLO-style category prompts plus a standard free-text prompt. Confidence scores and predicted labels are shown for both pipelines on the same test object.<br>
+      </sub>
+    </td>
+  </tr>
+</table>
+
+Across all tested prompts, **YOLO + CLIP** produced higher-confidence correct classifications than **SAM + CLIP²**, confirming the trade-off described above. Despite the **SAM + CLIP²** adjustment, YOLO's natural context and padding still gives it a slight overall advantage.
 
 
 
 
----
-
-## Repository Structure
-
-The workspace is laid out as follows:
-
-```text
-├── Images/                
-│   └── Object_Setup.jpeg  # Target test image
-├── Prompt_SAM_CLIP.ipynb  # Pipeline: SAM segmentation + CLIP + CLIP matching
-├── Prompt_YOLO_CLIP.ipynb # Pipeline: YOLO bounding boxes + CLIP matching
-├── requirements.txt       # Python environment dependencies
-└── README.md              # Project documentation
-```
 
 
 ---
